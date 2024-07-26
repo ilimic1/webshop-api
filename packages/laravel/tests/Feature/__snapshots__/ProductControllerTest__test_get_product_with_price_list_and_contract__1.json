@@ -1,0 +1,52 @@
+{
+    "created_at": "2022-01-01T00:00:00.000000Z",
+    "updated_at": "2022-01-01T00:00:00.000000Z",
+    "sku": "SKU-laptop-01",
+    "name": "Laptop 01",
+    "description": "Description 01.",
+    "price": 50000,
+    "published": true,
+    "lowest_price": 40000,
+    "categories": [
+        {
+            "id": 2,
+            "created_at": "2022-01-01T00:00:00.000000Z",
+            "updated_at": "2022-01-01T00:00:00.000000Z",
+            "name": "Laptops",
+            "description": "Lorem ipsum dolor.",
+            "parent_id": 1,
+            "pivot": {
+                "sku": "SKU-laptop-01",
+                "category_id": 2
+            }
+        }
+    ],
+    "price_lists": [
+        {
+            "id": 1,
+            "created_at": "2022-01-01T00:00:00.000000Z",
+            "updated_at": "2022-01-01T00:00:00.000000Z",
+            "name": "Partner Computer Service Shop 01",
+            "pivot": {
+                "sku": "SKU-laptop-01",
+                "price_list_id": 1,
+                "price": 45000
+            }
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe 01",
+            "email": "john-doe-01@example.com",
+            "email_verified_at": "2022-01-01T00:00:00.000000Z",
+            "created_at": "2022-01-01T00:00:00.000000Z",
+            "updated_at": "2022-01-01T00:00:00.000000Z",
+            "pivot": {
+                "sku": "SKU-laptop-01",
+                "user_id": 1,
+                "price": 40000
+            }
+        }
+    ]
+}

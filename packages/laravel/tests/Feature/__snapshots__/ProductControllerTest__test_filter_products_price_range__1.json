@@ -1,0 +1,162 @@
+{
+    "current_page": 1,
+    "data": [
+        {
+            "created_at": "2022-01-01T00:00:00.000000Z",
+            "updated_at": "2022-01-01T00:00:00.000000Z",
+            "sku": "SKU-keyboard-05",
+            "name": "Keyboard 05",
+            "description": "Description 05.",
+            "price": 5000,
+            "published": true,
+            "lowest_price": 5000,
+            "categories": [
+                {
+                    "id": 3,
+                    "created_at": "2022-01-01T00:00:00.000000Z",
+                    "updated_at": "2022-01-01T00:00:00.000000Z",
+                    "name": "Keyboards",
+                    "description": "Lorem ipsum dolor.",
+                    "parent_id": 1,
+                    "pivot": {
+                        "sku": "SKU-keyboard-05",
+                        "category_id": 3
+                    }
+                }
+            ],
+            "price_lists": [],
+            "users": []
+        },
+        {
+            "created_at": "2022-01-01T00:00:00.000000Z",
+            "updated_at": "2022-01-01T00:00:00.000000Z",
+            "sku": "SKU-laptop-01",
+            "name": "Laptop 01",
+            "description": "Description 01.",
+            "price": 50000,
+            "published": true,
+            "lowest_price": 40000,
+            "categories": [
+                {
+                    "id": 2,
+                    "created_at": "2022-01-01T00:00:00.000000Z",
+                    "updated_at": "2022-01-01T00:00:00.000000Z",
+                    "name": "Laptops",
+                    "description": "Lorem ipsum dolor.",
+                    "parent_id": 1,
+                    "pivot": {
+                        "sku": "SKU-laptop-01",
+                        "category_id": 2
+                    }
+                }
+            ],
+            "price_lists": [
+                {
+                    "id": 1,
+                    "created_at": "2022-01-01T00:00:00.000000Z",
+                    "updated_at": "2022-01-01T00:00:00.000000Z",
+                    "name": "Partner Computer Service Shop 01",
+                    "pivot": {
+                        "sku": "SKU-laptop-01",
+                        "price_list_id": 1,
+                        "price": 45000
+                    }
+                }
+            ],
+            "users": [
+                {
+                    "id": 1,
+                    "name": "John Doe 01",
+                    "email": "john-doe-01@example.com",
+                    "email_verified_at": "2022-01-01T00:00:00.000000Z",
+                    "created_at": "2022-01-01T00:00:00.000000Z",
+                    "updated_at": "2022-01-01T00:00:00.000000Z",
+                    "pivot": {
+                        "sku": "SKU-laptop-01",
+                        "user_id": 1,
+                        "price": 40000
+                    }
+                }
+            ]
+        },
+        {
+            "created_at": "2022-01-01T00:00:00.000000Z",
+            "updated_at": "2022-01-01T00:00:00.000000Z",
+            "sku": "SKU-laptop-02",
+            "name": "Laptop 02",
+            "description": "Description 02.",
+            "price": 100000,
+            "published": true,
+            "lowest_price": 44000,
+            "categories": [
+                {
+                    "id": 2,
+                    "created_at": "2022-01-01T00:00:00.000000Z",
+                    "updated_at": "2022-01-01T00:00:00.000000Z",
+                    "name": "Laptops",
+                    "description": "Lorem ipsum dolor.",
+                    "parent_id": 1,
+                    "pivot": {
+                        "sku": "SKU-laptop-02",
+                        "category_id": 2
+                    }
+                }
+            ],
+            "price_lists": [
+                {
+                    "id": 1,
+                    "created_at": "2022-01-01T00:00:00.000000Z",
+                    "updated_at": "2022-01-01T00:00:00.000000Z",
+                    "name": "Partner Computer Service Shop 01",
+                    "pivot": {
+                        "sku": "SKU-laptop-02",
+                        "price_list_id": 1,
+                        "price": 49500
+                    }
+                }
+            ],
+            "users": [
+                {
+                    "id": 1,
+                    "name": "John Doe 01",
+                    "email": "john-doe-01@example.com",
+                    "email_verified_at": "2022-01-01T00:00:00.000000Z",
+                    "created_at": "2022-01-01T00:00:00.000000Z",
+                    "updated_at": "2022-01-01T00:00:00.000000Z",
+                    "pivot": {
+                        "sku": "SKU-laptop-02",
+                        "user_id": 1,
+                        "price": 44000
+                    }
+                }
+            ]
+        }
+    ],
+    "first_page_url": "http:\/\/localhost\/api\/products\/filter?price_list_id=1&user_id=1&sort_col=price&sort_dir=asc&price=5000%2C50000&page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "http:\/\/localhost\/api\/products\/filter?price_list_id=1&user_id=1&sort_col=price&sort_dir=asc&price=5000%2C50000&page=1",
+    "links": [
+        {
+            "url": null,
+            "label": "&laquo; Previous",
+            "active": false
+        },
+        {
+            "url": "http:\/\/localhost\/api\/products\/filter?price_list_id=1&user_id=1&sort_col=price&sort_dir=asc&price=5000%2C50000&page=1",
+            "label": "1",
+            "active": true
+        },
+        {
+            "url": null,
+            "label": "Next &raquo;",
+            "active": false
+        }
+    ],
+    "next_page_url": null,
+    "path": "http:\/\/localhost\/api\/products\/filter",
+    "per_page": 10,
+    "prev_page_url": null,
+    "to": 3,
+    "total": 3
+}
